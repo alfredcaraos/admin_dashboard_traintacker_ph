@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="datatables/DataTables-1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <div class="container-fluid">
+            <!--offcanvas trigger-->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+              </button>
+            <!--offcanvas trigger-->
+          <a class="navbar-brand fw-bold text-uppercase me-auto" href="#">Train Tracker PH</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           
+            <form class="d-flex ms-auto">
+                <div class="input-group my-3 my-lg-0">
+                  </div>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+
+          </div>
+        </div>
+      </nav>
+    <!--Navbar-->
+    
+    <!--Offcanvas-->      
+      <div class="offcanvas offcanvas-start bg-dark-blue text-white sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
+          <nav class="navbar-darl">
+            <ul class="navbar-nav">
+                <li>
+                    <div class="text-white small fw-bold text-uppercase px-3 pt-3">
+                        Admin
+                    </div>
+                </li>
+                <li>
+                  <a href="admin_dashboard.html" class="nav-link px-3 active">
+                      <span class="me-2">
+                        <i class="bi bi-speedometer2 text-white"></i>
+                      </span>
+                      <span class="text-white">Dashboard</span>
+                  </a>
+              </li>
+                <li>
+                    <a href="account_management.html" class="nav-link px-3 active">
+                        <span class="me-2">
+                            <i class="bi bi-card-list text-warning"></i>
+                        </span>
+                        <span class="text-warning">Account Management</span>
+                    </a>
+                </li>
+                <li>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <div class="text-white small fw-bold text-uppercase px-3 pt-3">
+                      Management
+                  </div>
+              </li>
+
+                <li>
+                  <a href="train_location.html" class="nav-link px-3 active">
+                      <span class="me-2">
+                        <i class="bi bi-train-freight-front-fill text-white"></i>
+                      </span>
+                      <span class="text-white">Train Status</span>
+                  </a>
+                </li>
+                <li>
+                    <a href="messaging.html" class="nav-link px-3 active">
+                        <span class="me-2">
+                            <i class="bi bi-chat-right-text text-white"></i>    
+                        </span>
+                        <span class="text-white">Messaging</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="crowd_management.html" class="nav-link px-3 active">
+                        <span class="me-2">
+                            <i class="bi bi-person-lines-fill text-white"></i>    
+                        </span>
+                        <span class="text-white">Crowd Management</span>
+                    </a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    <!--Offcanvas-->
+    
+    <!--Content-->
+    <main class="mt-5 pt-3">
+
+      <!--Dashboard-->
+      <div class="container-fluid">
+        <div class="col-md-12 fw-bold fs-4">Account Management</div>
+      </div>
+      <!--Dashboard-->
+   
+       <!--Employee Table-->
+        <div class="row">
+          <div class="col-md-12 px-4">
+            <div class="col-md-12 fw-bold fs-4">Employee</div>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Username</th>
+                  <th scope="col">User Access</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>caraosalfred</td>
+                  <td>Admin</td>
+                  <td>Active</td>
+                  <td><a href="#" class="btn btn-primary">Edit</a> <a href="#" class="btn btn-danger">Delete</a></td>              
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>alfonsoalfred</td>
+                  <td>Employee</td>
+                  <td>Inactive</td>
+                  <td><a href="#" class="btn btn-primary">Edit</a> <a href="#" class="btn btn-danger">Delete</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+       <!--Employee Table-->
+
+       <!--Mobile Users Table-->
+       <div class="row">
+        <div class="col-md-12 px-4">
+          <div class="col-md-12 fw-bold fs-4">Mobile Users</div>
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">User Status</th>
+                <th scope="col">Train Boarded</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Alfred</td>
+                <td>Caraos</td>
+                <td>Boarded</td>
+                <td>Train 01</td>
+                <td><a href="#" class="btn btn-primary">Edit</a> <a href="#" class="btn btn-danger">Delete</a></td>              
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Alfred</td>
+                <td>Alfonso</td>
+                <td>Boarded</td>
+                <td>Train 02</td>
+                <td><a href="#" class="btn btn-primary">Edit</a> <a href="#" class="btn btn-danger">Delete</a></td>              
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Pedro</td>
+                <td>Calungsod</td>
+                <td>Waiting</td>
+                <td>Train 02</td>
+                <td><a href="#" class="btn btn-primary">Edit</a> <a href="#" class="btn btn-danger">Delete</a></td>              
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Juan</td>
+                <td>Tamad</td>
+                <td>Waiting</td>
+                <td>Train 01</td>
+                <td><a href="#" class="btn btn-primary">Edit</a> <a href="#" class="btn btn-danger">Delete</a></td>              
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--Mobile Users Table-->
+
+
+    </main>
+    <!--Content--> 
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./datatables/DataTables-1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="./datatables/DataTables-1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
