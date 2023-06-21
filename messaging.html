@@ -38,7 +38,7 @@
                     <i class="bi bi-person-circle"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    <li><a class="dropdown-item" href="log_in.html">Log Out</a></li>
                   </ul>
                 </li>
                 
@@ -114,19 +114,111 @@
       </div>
     <!--Offcanvas-->
     
-    <!--Content-->
-    <main class="mt-5 pt-3">
-
-      <!--Dashboard-->
-      <div class="container-fluid">
-        <div class="col-md-12 fw-bold fs-4">Messaging</div>
+  <!--Content-->
+  <main class="mt-5 pt-3">
+    <!--Messaging-->
+    <div class="container-fluid">
+      <div class="col-md-12 fw-bold fs-4">Messaging</div>
+      <div class="messaging-module">
+        <form>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject:</label>
+            <input type="text" class="form-control" id="subject">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea class="form-control" id="message" rows="5"></textarea>
+          </div>
+          <div class="text-end">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
       </div>
-      <!--Dashboard-->
-   
+    </div>
+    <!--Messaging-->
+
+  <!--Notification-->
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="col-md-12 fw-bold fs-4">Notification From Train Driver</div>
+  </div>
+  <div class="row mt-3">
+    <div class="col">
+      <div class="notification-container border border-dark">
+        <div class="notification">
+          <div class="scrollable-container" style="max-height: 400px; overflow-y: auto;">
+
+            <!--Notification Content-->
+            <div class="notification-content m-4 border rounded border-dark">
+              <div class="p-2">
+                <div class="row">
+                  <div class="col">
+                    <p class="notification-from">From: Train 01</p>
+                  </div>
+                  <div class="col-2 ps-5">
+                    <p class="notification-time">Time Sent: 10:30 AM</p>
+                  </div>  
+                </div>
+                  <h5 class="notification-subject">Subject: Mechanical Failure</h5>
+                  <p class="notification-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero vitae nisi iaculis gravida.
+                  </p> 
+              </div>     
+            </div>
+            <!--Notification Content-->
+
+            <!--Notification Content-->
+            <div class="notification-content m-4 border rounded border-dark">
+              <div class="p-2">
+                <div class="row">
+                  <div class="col">
+                    <p class="notification-from">From: Train 02</p>
+                  </div>
+                  <div class="col-2 ps-5">
+                    <p class="notification-time">Time Sent: 10:30 AM</p>
+                  </div>  
+                </div>
+                  <h5 class="notification-subject">Subject: Mechanical Failure</h5>
+                  <p class="notification-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero vitae nisi iaculis gravida.
+                  </p> 
+              </div>     
+            </div>
+            <!--Notification Content-->
+            
+            <!--Notification Content-->
+            <div class="notification-content m-4 border rounded border-dark">
+              <div class="p-2">
+                <div class="row">
+                  <div class="col">
+                    <p class="notification-from">From: Train 01</p>
+                  </div>
+                  <div class="col-2 ps-5">
+                    <p class="notification-time">Time Sent: 10:30 AM</p>
+                  </div>  
+                </div>
+                  <h5 class="notification-subject">Subject: Mechanical Failure</h5>
+                  <p class="notification-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec libero vitae nisi iaculis gravida.
+                  </p> 
+              </div>     
+            </div>
+            <!--Notification Content-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Notification-->
 
 
-    </main>
-    <!--Content--> 
+
+
+  </main>
+  <!--Content-->
+ 
+
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./datatables/DataTables-1.12.1/js/jquery.dataTables.min.js"></script>
