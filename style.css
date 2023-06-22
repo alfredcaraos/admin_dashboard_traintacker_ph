@@ -43,3 +43,5 @@ body, button{
 max-height: 300px; /* Set the desired height for the scrollable area */
 overflow-y: auto; /* Add vertical scrollbar when content exceeds the height */
 }
+
+#map { height: 500px; }
