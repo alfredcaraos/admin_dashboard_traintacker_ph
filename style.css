@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=sawp");
+
+body, button{
+    font-family: "Inter", sans-serif;
+}
+
+
+.bg-dark-blue {
+    background-color: #283367;
+  }
+
+.notification-module {
+max-height: 300px; /* Set the desired height for the scrollable area */
+overflow-y: auto; /* Add vertical scrollbar when content exceeds the height */
+}
+
+.sidebar{
+    margin-top: 25px;
+    z-index: 1000;
+}
+
+
+#map { height: 500px; }
